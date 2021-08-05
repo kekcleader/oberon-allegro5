@@ -2,13 +2,13 @@ MODULE Allegro5Keycodes;
 CONST
   a* = 1;
   b* = 2;
-  
+
   n0* = 27;
-  
+
   escape* = 59;
   enter* = 67;
   space* = 75;
-  
+
   left* = 82;
   right* = 83;
   up* = 84;
