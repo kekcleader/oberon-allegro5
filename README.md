@@ -31,12 +31,19 @@ A file `RunTests.exe` will be created. Run it.
 
 ## Linux
 
-On Linux (Debian) run:
+On Linux (Debian) run as root:
 ```
 dpkg --add-architecture i386
 apt-get update
-apt-get install libxpm4:i386
+apt-get install libxpm4:i386 libgl1-mesa-glx:i386
 ```
+
+SO-files are used instead of the DLL-files.
+Please edit the first lines of `Allegro5/Mod/Lib.Mod` and
+`Allegro5/Mod/Image.Mod` replacing:
+
+* `"allegro-5.2.dll"` with `"liballegro.so.5.2"`
+* `"allegro_image-5.2.dll"` with `"liballegro_image.so.5.2"`
 
 _________________________________________________
 
@@ -71,9 +78,16 @@ foc RunTests
 
 ## Линукс
 
-На Линуксе (Дебиан) наберите:
+На Линуксе (Дебиан) из-под рута наберите:
 ```
 dpkg --add-architecture i386
 apt-get update
-apt-get install libxpm4:i386
+apt-get install libxpm4:i386 libgl1-mesa-glx:i386
 ```
+
+Вместо DLL-файлов используются SO-файлы.
+Исправьте первые строки файлов `Allegro5/Mod/Lib.Mod` и
+`Allegro5/Mod/Image.Mod`, заменив:
+
+* `"allegro-5.2.dll"` на `"liballegro.so.5.2"`
+* `"allegro_image-5.2.dll"` на `"liballegro_image.so.5.2"`
