@@ -45,6 +45,12 @@ Please edit the first lines of `Allegro5/Mod/Lib.Mod` and
 * `"allegro-5.2.dll"` with `"liballegro.so.5.2"`
 * `"allegro_image-5.2.dll"` with `"liballegro_image.so.5.2"`
 
+To run the program, set `LD_LIBARY_PATH=.` or install
+32-bit versions of Allegro5 libraries.
+```
+LD_LIBRARY_PATH=. ./RunTests
+```
+
 _________________________________________________
 
 # Привязка Аллегро-5 для Оберона
@@ -91,3 +97,9 @@ apt-get install libxpm4:i386 libgl1-mesa-glx:i386
 
 * `"allegro-5.2.dll"` на `"liballegro.so.5.2"`
 * `"allegro_image-5.2.dll"` на `"liballegro_image.so.5.2"`
+
+Для запуска программы укажите `LD_LIBARY_PATH=.` или установите
+32-разрядные версии библиотек Allegro5.
+```
+LD_LIBRARY_PATH=. ./RunTests
+```
