@@ -29,6 +29,15 @@ foc RunTests
 
 A file `RunTests.exe` will be created. Run it.
 
+## Linux
+
+On Linux (Debian) run:
+```
+dpkg --add-architecture i386
+apt-get update
+apt-get install libxpm4:i386
+```
+
 _________________________________________________
 
 # Привязка Аллегро-5 для Оберона
@@ -59,3 +68,12 @@ foc RunTests
 ```
 
 Появится файл `RunTests.exe`. Запустите его.
+
+## Линукс
+
+На Линуксе (Дебиан) наберите:
+```
+dpkg --add-architecture i386
+apt-get update
+apt-get install libxpm4:i386
+```
