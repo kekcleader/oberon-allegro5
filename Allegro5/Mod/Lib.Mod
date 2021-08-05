@@ -1,4 +1,5 @@
 MODULE Allegro5Lib ["allegro-5.2.dll"];
+  (* ON LINUX USE: ["liballegro.so.5.2"]; *)
 IMPORT SYSTEM;
 CONST
   allegroVersionInt* = 5020400H; (*version 5.2.4.0*)
